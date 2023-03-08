@@ -6,6 +6,8 @@ urlpatterns = [
     path('output/<int:id>',views.output),
     path('getques',views.getques),
     path('getdata',views.getdata),
+    path('getdata2', views.getdata2),
+    path('login',views.login)
 
 
 ]

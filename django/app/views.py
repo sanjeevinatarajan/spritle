@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.contrib.auth import authenticate
 from django.contrib import messages
@@ -62,3 +62,9 @@ def getdata(request):
     getdata = master.objects.all().values()
     context = {'getdata': getdata}
     return render(request, 'getdata.html', context)
+def getdata2(request):
+    getdata2 = master.objects.all().values()
+    context = {'getdata2': getdata2}
+    return render(request, 'getdata2.html', context)
+def login(request):
+    return redirect('/')

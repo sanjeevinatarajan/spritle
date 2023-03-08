@@ -7,14 +7,7 @@
 
 <main id="main" class="main">
 
-      <div class="row">
-                    <div class="col-sm-8"><h4>student list</h4></div>
-                    <div class="col-sm-4">
-                        <a href="getdata2">
-                        <button type="button" class="btn btn-info add-new"> activity log </button>
-                        </a>
-                    </div>
-                </div>
+
 
     <section class="section">
       <div class="row">
@@ -34,6 +27,7 @@
                   <tr>
                     <th scope="col">S NO</th>
                     <th scope="col">question</th>
+                     <th scope="col">Answer</th>
 
 
 
@@ -41,15 +35,14 @@
                 </thead>
                 <tbody>
 
-                {%for x in getdata%}
+                {%for x in getdata2%}
 
     <tr>
         <td>{{x.id}}</td>
         <td>{{x.input}}</td>
+        <td>{{x.output}}</td>
 
-        <td><a href="output/{{x.id}}">
-            answer</a>
-        </td>
+
 
     </tr>
     {%endfor%}
@@ -71,7 +64,7 @@
 
 
     </section>
-<
+
 
   </main>
 

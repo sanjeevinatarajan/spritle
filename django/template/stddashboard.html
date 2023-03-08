@@ -1,4 +1,4 @@
-{%extends "base.html"%}
+{%extends "base2.html"%}
 {%block content%}
 
 
@@ -21,14 +21,7 @@
 
 <form method="POST" >
      {%csrf_token%}
-     <div class="row">
-                    <div class="col-sm-8"><h4>student list</h4></div>
-                    <div class="col-sm-4">
-                        <a href="getdata">
-                        <button type="button" class="btn btn-info add-new"> activity log </button>
-                        </a>
-                    </div>
-                </div>
+     
 
           <div class="card">
             <div class="card-body">
